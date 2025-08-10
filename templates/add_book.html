@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Add a New Book</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+</header>
+
+<section class="form-section">
+    <form action="{{ url_for('add_book_submit') }}" method="post">
+        <label>Title:</label>
+        <input type="text" name="title" required>
+
+        <label>Author:</label>
+        <input type="text" name="author" required>
+
+        <label>Year:</label>
+        <input type="number" name="year" required>
+
+        <label>Image URL:</label>
+        <input type="text" name="image" required>
+
+        <button type="submit">Add Book</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 My Book Library</p>
+</footer>
+
+</body>
+</html>
