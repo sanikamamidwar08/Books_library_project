@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Book Library</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>📚 My Book Library</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('add_book_form') }}">Add Book</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Discover Your Next Favorite Book</h2>
+    <p>Browse through your collection and add more anytime.</p>
+</section>
+
+<section class="book-list">
+    {% for book in books %}
+    <div class="book-card">
+        <img src="{{ book.image }}" alt="{{ book.title }}">
+        <h3>{{ book.title }}</h3>
+        <p>by {{ book.author }} ({{ book.year }})</p>
+        <a href="{{ url_for('book_detail', book_id=book.id) }}" class="btn">View Details</a>
+        <form action="{{ url_for('delete_book', book_id=book.id) }}" method="post">
+            <button type="submit" class="delete-btn">Delete</button>
+        </form>
+    </div>
+    {% endfor %}
+</section>
+
+<footer>
+    <p>© 2025 My Book Library | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
