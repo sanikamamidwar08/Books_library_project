@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bfa557d-969a-4081-a50b-a7169f47af6b" name="Changes" comment="Book Management project" />
+    <list default="true" id="4bfa557d-969a-4081-a50b-a7169f47af6b" name="Changes" comment="&quot;Added new book form and update index page&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754853558756</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;Added new book form and update index page&quot;">
+      <option name="closed" value="true" />
+      <created>1757203871212</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757203871212</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Flask app now stores books in SQLite DB&quot;" />
     <MESSAGE value="Book Management project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Book Management project" />
+    <MESSAGE value="&quot;Added new book form and update index page&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added new book form and update index page&quot;" />
   </component>
 </project>
